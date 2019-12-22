@@ -64,7 +64,12 @@ class UsersController extends Controller
         //Save Updated Credentials
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->save();
+        
+        if($user->save()){
+            $request->session()->flash('success', $user->name . ' has been updated');
+        } else {
+            $request->session()->flash('error', 'There was an error updating the user');
+        }
 
         return redirect()->route('admin.users.index');
     }
