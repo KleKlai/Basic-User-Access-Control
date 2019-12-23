@@ -12,6 +12,10 @@ php artisan migrate
 **To run the seed: ** `php artisan db:seed`
 **NOTE** before running the seed make sure the __UsersTableSeeder.php__ functions in the class has been comment after running the seed uncomment all the function in __UsersTableSeeder.php__ and run the migration again.
 
+## Alternative Libraries for UAC
+**[Laravel spatie\Permission](https://github.com/spatie/laravel-permission)**
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
