@@ -1,15 +1,16 @@
 ## Usage
 
 - create a database in your desire rdbms database
-- Change the UAC environment file by navigataing to *.env* look for DB_DATABASE=INSERT_YOUR_DATABASE_NAME_HERE
+- Change the UAC environment file by navigataing to __.env__ look for DB_DATABASE=INSERT_YOUR_DATABASE_NAME_HERE
 - Run the migration command and also you can run the seeding to populate the database with default credentials and roles
 
 To run the migration enter the code below:
-```
+```php
 php artisan migrate
 ```
 
-To run the seed `php artisan db:seed`
+**To run the seed: ** `php artisan db:seed`
+**NOTE** before running the seed make sure the __UsersTableSeeder.php__ functions in the class has been comment after running the seed uncomment all the function in __UsersTableSeeder.php__ and run the migration again.
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
