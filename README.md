@@ -1,3 +1,16 @@
+## Usage
+
+- create a database in your desire rdbms database
+- Change the UAC environment file by navigataing to *.env* look for DB_DATABASE=INSERT_YOUR_DATABASE_NAME_HERE
+- Run the migration command and also you can run the seeding to populate the database with default credentials and roles
+
+To run the migration enter the code below:
+```
+php artisan migrate
+```
+
+To run the seed `php artisan db:seed`
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
